@@ -44,6 +44,20 @@
                 margin: 5px 0;
             }
         }
+        @media (max-width: 600px) {
+            .button {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+                line-height: normal;
+                padding: 15px;
+                margin: 0 auto; /* centers button inside column */
+            }
+            details div {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
         *{
             font-family: 'Cormorant Garamond', serif;
         }
@@ -188,23 +202,63 @@
             filter: blur(1px);  /* Apply a slight blur effect (adjust the px value for more/less blur) */
         }
         button{
-            color: white;
-            background-color: var(--detail-color);
-            border: 1px solid var(--detail-color);
+            color: white !important;
+            background-color: var(--detail-color) !important;
+            border: 1px solid var(--detail-color)!important;
             font-size: 25px;
             border-radius: 20px;
             padding: 5px, 10px;
+            text-decoration: none;
             
         }
         button:hover{
-                transform: scale(1.05); 
-            }
+            background-color: black;
+            transform: scale(1.01) !important; 
+        }
+        .button {
+            display: block;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            background-color: var(--detail-color);
+            color: white;
+            border-radius: 20px;
+            font-size: 25px;
+            text-decoration: none;
+            margin: 0 auto; /* centers them if needed */
+        }
+        .img-button{
+            display: block;
+            width: 80%;
+            height: auto;
+            border-radius: 20px;
+            cursor: pointer;
+            margin: 0 auto;
+        }
+        .button:hover {
+            background-color: black;
+            transform: scale(1.01);
+            color: white !important;
+        }
         #contact-us-button{
             position: fixed;
             z-index: 1000;
             bottom: 20px;
             right: 20px;
         }
+        .centered{
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
 
         
     
@@ -212,75 +266,93 @@
 </head>
 <body>
     <nav>
-       <h3 class="nav-item" style="margin-left: 15px;">Meriadoc Homeschool Library</h3>
+       <h3 class="nav-item" style="margin-left: 15px;">Plumfield Living Library</h3>
     </nav>
     <div class="banner"></div>
     <div class="body-container">
         <img src="images/logo.jpg" width="250" id="logo"/>
 
-        <h1 class="page-header">Welcome Meriadoc Homeschool Library!</h1>
-        <p>Our library of over 12,000 books is a private living books lending library for homeschooling families as well as others who want a library experience that will support Christian and traditional values in children’s, young adult, and adult literature. Librarian Sherry Early was once a public school librarian and then a homeschool mom of eight children. She spent twenty-five years educating her children with literature-based curricula—and collecting books to support that education. Now, she is eager to share that rich literary heritage—which belongs to all of us—with your family through the books that you and your family can borrow from Meriadoc Homeschool Library.</p>
-        
+        <h1 class="page-header">Welcome to Plumfield Living Library!</h1>
+        <p>Welcome to Plumfield Living Books Library in Denmark, Wisconsin! We are a small private lending library with about almost 10,000 books at this time. You can find us on Facebook and <a href="https://www.instagram.com/plumfieldlibrary/" target="_blank">Instagram.</a></p>
+        <p>Also, you can email us here: plumfieldlivinglibrary@gmail.com.</p>
+        <p>We are proud partners with Biblioguides. All our library patrons have a Biblioguides membership included in their annual fee. You can find our Partner Guide information here: <a href="https://www.biblioguides.com/pub/guide/plumfield-moms" target="_blank">Plumfield Guide</a></p>       
+        <p>In addition to the books themselves, our library has a lot of enrichment opportunities. We have monthly book clubs, a nature club, a handicrafts club, and a monthly Symposium.</p>
+        <a class="button centered"  href="https://plumfieldlibrary.fillout.com/library-tour">Schedule a Tour</a>
         <button id="contact-us-button" onclick="contactUs()">Contact Us</button>
+        
+        
         <h2>FAQ</h2>
         <hr>
         <br/>
         
         <details>
             <summary>Where are you located?</summary>
-            <p>Meriadoc Homeschool Library is located in my home in <a href="https://maps.app.goo.gl/7SCvrU2zam8XHv3G6" target="_blank">Clear Lake (15707 Rill Lane, Houston, TX 77062)</a></p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.485058089161!2d-95.13632304511741!3d29.563534462256037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86409c7093fcc3b1%3A0xe6c4f289dea074c1!2s15707%20Rill%20Ln%2C%20Houston%2C%20TX%2077062!5e0!3m2!1sen!2sus!4v1743183960387!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+            <p>Plumfield Living Library is located in my home in Denmark, Wisconsin.</p>
         </details>
         <details>
             <summary>What are your hours?</summary>
-            <p>The library is open on Mondays, Tuesdays, and Fridays from 9:00 to 4:00 for members to browse and check out books.</p>
-            <p>Books on hold can be picked up anytime, and books can be returned anytime to the book drop on the front porch.</p>
+            <p>By appointment on Thursday-Saturday from 12:00-3:30. Schedule an appointment, here. </p>
+            <a class="button centered" href="https://calendar.notion.so/meet/saramasarik/library-appointment" target="_blank">Schedule an Appointment</a>
         </details>
         <details>
             <summary>How does this work?</summary>
-            <p>It's a library! Meriadoc Homeschool Library is a private lending library located in my home, but open to member families who can check out books to support their curriculum and leisure reading. We carry fiction and nonfiction books, mostly for children and teens, with some adult books as well. </p>
+            <p>This is a private lending library open to members. </p>
         </details>
         <details>
             <summary>How much does this cost?</summary>
-            <p>The cost for a library membership is $72 per year, renewable in January of each year. If you join later in the year, your fee will be prorated to the remaining months in the years ($6.00 per month). We can accept either cash, check, or PayPal in payment of the library fee.</p>
-        </details>
-        <details>
-            <summary>Can I request holds without coming into the library?</summary>
-            <p>Absolutely! We have a TinyCat account and every patron is given their own holds login.</p>
-            <p>After you join you will have a library PIN that will enable you to place a hold on any of the books in the library and then pick them up anytime from the front porch. Books can also be returned anytime in the book drop on the front porch.</p>
-            <p>You can check our catalog here.</p>
-            <a href="https://www.librarycat.org/lib/sherryearly/" target="_blank" id="holds-catalog">View Catalog</a>
-            
+            <p>$100 per year per family plus any class or club material fees.</p>
         </details>
         <details>
             <summary>What is included in my membership?</summary>
             <p>
             <ul>
-                <li>Full access to the library collection of more than 12,000 excellent books.</li>
-                <li>Curated picture book boxes with books on various themes available for checkout</li>
-                <li>Readers' Advisory in person or via email. Librarian Sherry Early can help you choose living books for your homeschool curriculum needs or for leisure reading.</li>
-                <li>Audiobooks on CD, math manipulatives, science supports, book study guides, all in addition to the riches of trustworthy, literary, living books, both classic and new.</li>
-                <li>A subscription to our monthly Meriadoc Homeschool Library email newsletter as well as our book review newsletter, <a href="https://thecardcataloglibrarians.com/newsletters" target="_blank">Book Review Roundup</a>, also delivered to your email inbox </li>
+                <li>Full Access to the library (over 10,000 books)</li>
+                <li>A one-year membership to the amazing Biblioguides database and community (a $79 value)</li>
+                <li>Access to in-person book clubs at the library (for middle and high school students; possibly moms too)</li>
+                <li>Opportunity to connect with other families through the library and its activities</li>
+                <li>Access to Nature, Handicrafts, Creative Writing and Symposium Classes and Clubs</li>
+                <li>A subscription to our book review newsletter, <a href="https://thecardcataloglibrarians.com/newsletters" target="_blank">Book Review Roundup</a></li>
             </ul>
             </p>
+        </details>
+        <details id="contact-details">
+            <summary>How do I get more information?</summary>
+            <p>If you have more questions or want to arrange a tour of the library, you can reach out to us via:</p>
+            <div class="button-grid">
+                <a class="button" href="mailto:plumfieldlivinglibrary@gmail.com">Email</a>
+                <a class="button" href="https://www.facebook.com/PlumfieldLibrary/" target="_blank">Facebook</a>
+                <a class="button" href="sms:+19204718272">Text</a>
+                <a class="button" href="https://www.instagram.com/plumfieldlibrary/" target="_blank">Instagram</a>
+            </div>
+            
+            
         </details>
         <details>
             <summary>How can I sign up for your newsletter?</summary>
         </details>
-        <details id="contact-details">
-            <summary>Contact us</summary>
-            <div id="contact">
-                <p>If you have more questions or want to arrange a tour of the library, you can email the library at  <a href="mailto:sherry.pray4you@gmail.com" target="_blank">sherry.pray4you@gmail.com</a></p>
-            </div>
-        </details>
+        <h2>Commonly Asked For Links</h2>
+        <ul>
+            <li><a href="https://calendar.notion.so/meet/saramasarik/library-appointment" target="_blank">Scheduling Link</a></li>
+            <li><a href="https://calendar.notion.so/meet/saramasarik/pick-up-drop-off" target="_blank">Pickup / Drop-off</a></li>
+            <li><a href="http://paypal.me/masarikfamily"target="_blank">Our PayPal</a></li>
+            <li><a href="https://account.venmo.com/u/Sara-Masarik" target="_blank">Venmo</a></li>
+            <li><a href="https://saramasarik.com/library/library-wishlist" target="_blank">Library Wishlist</a></li>
+        </ul>
+        <div class="button-grid">
+            <a href="https://www.librarycat.org/lib/PlumfieldLL" target="_blank">
+                <img class="img-button"  src="https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/4dcae659-854c-4de0-9986-3b61994afddb/Website_Tiles/w=750,quality=90,fit=scale-down" />
+            </a>
+            <a href="https://www.theepochtimes.com/bright/for-families-a-treasure-trove-of-wholesome-books-5823172" target="_blank">
+                <img class="img-button" src="https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/0ddf7e36-d020-4578-81e8-a19e28159946/EpochTimes/w=750,quality=90,fit=scale-down" />
+            </a>
+         </div>
     </div>
     <footer>
-        <a href="https://www.librarycat.org/lib/sherryearly/" target="_blank">Catalog</a>
+        <a href="https://www.librarycat.org/lib/plumfieldll" target="_blank">Catalog</a>
         <br/> 
-        <a href="https://www.semicolonblog.com" target="_blank">Blog</a> 
+        <a href="https://plumfieldmoms.com" target="_blank">Blog</a> 
         <br/>
-        <a href="https://thecardcataloglibrarians.com/the-card-catalog-database/sherry-early" target="_blank">Library Story</a>
+        <a href="https://thecardcataloglibrarians.com/sara-masarik" target="_blank">Library Story</a>
         <br/>
         <a href="https://www.biblioguides.com/guides/pbpdownload.csp" target="_blank">Picture Book Preschool</a>
     </footer>
