@@ -1,45 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- PWA / iOS fullscreen app settings -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Library Kiosk">
+    <!-- PWA / iOS fullscreen app settings -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Library Kiosk">
 
-  <!-- Icons for home screen -->
-  <link rel="apple-touch-icon" href="./icons/icon-192.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
-  <link rel="manifest" href="./manifest.json">
+    <!-- Icons for home screen -->
+    <link rel="apple-touch-icon" href="./icons/icon-192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
+    <link rel="manifest" href="./manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Plus:regular,italic,700,700italic"
+        rel="stylesheet" />
 
-  <title>Library Kiosk</title>
+    <!-- Portrait -->
+    <link rel="apple-touch-startup-image" href="/splash/launch-1620x2160.png" media="(device-width: 810px) and (device-height: 1080px)
+      and (-webkit-device-pixel-ratio: 2)
+      and (orientation: portrait)">
 
-  <style>
-    /* Reset margins/padding for full-viewport iframe */
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      background: #fff; /* fallback background */
-    }
+    <!-- Landscape -->
+    <link rel="apple-touch-startup-image" href="/splash/launch-2160x1620.png" media="(device-width: 810px) and (device-height: 1080px)
+      and (-webkit-device-pixel-ratio: 2)
+      and (orientation: landscape)">
 
-    iframe {
-      border: none;
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
-  </style>
+    <title>Library Kiosk</title>
+
+    <style>
+        /* Reset margins/padding for full-viewport iframe */
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background: #fff;
+            
+            /* fallback background */
+        }
+    
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Gentium Book Plus', serif;
+            font-size: 1.2rem;
+            color: #7D0E0E;
+            z-index: 1000;
+        }
+
+        /* Simple spinner */
+        .spinner {
+            border: 4px solid #eee;
+            border-top: 4px solid #7D0E0E;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <!-- Fullscreen Libib iframe -->
-  <iframe
-    src="https://libib.com/u/plumfieldlibrary"
-    sandbox="allow-same-origin allow-scripts allow-forms"
-  ></iframe>
+    <!-- Loader overlay -->
+    <div id="loader">
+        <div class="spinner"></div> Loading catalog...
+    </div>
+
+    <!-- Fullscreen Libib iframe -->
+    <iframe id="catalog" src="https://libib.com/u/plumfieldlibrary"
+        sandbox="allow-same-origin allow-scripts allow-forms"
+        onload="document.getElementById('loader').style.display='none';"></iframe>
 </body>
+
 </html>
