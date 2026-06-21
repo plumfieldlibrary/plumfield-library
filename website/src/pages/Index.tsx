@@ -5,12 +5,12 @@ import DeansList from "@/assets/deans_list.webp"
 import EpochTimes from "@/assets/epoch_times.webp"
 import LWLImg from "@/assets/lwl.webp"
 import ShireImg from "@/assets/shire.webp"
-import { ImageLink } from "./components/Buttons"
-import { FAQ } from "./components/FAQ"
-import { NewPatron } from "./components/Forms"
-import { FrontGallery } from "./components/Galleries"
-import { Button } from "./components/ui/button"
-import { Card, CardContent, CardHeader } from "./components/ui/card"
+import { ImageLink } from "../components/Buttons"
+import { FAQ } from "../components/FAQ"
+import { NewPatron } from "../components/Forms"
+import { FrontGallery } from "../components/Galleries"
+import { Button } from "../components/ui/button"
+import { Card, CardContent, CardHeader } from "../components/ui/card"
 
 export function App() {
   return (
@@ -21,7 +21,7 @@ export function App() {
 
       </div>
       <main className="py-6 px-4">
-        <div className="md:max-w-5/8 max-w-full mx-auto leading-loose">
+        <div className="lg:max-w-5/8 md:max-w-2/3 sm:max-w-full mx-auto leading-loose">
 
           <h1 className="font-medium justify-center text-center text-5xl pb-6">Plumfield Library</h1>
           <p>Nestled in the heart of Denmark, Wisconsin, Plumfield Living Books Library is a private lending library devoted to cultivating a love of truth, goodness, and beauty through living books. With about 12,000 carefully curated titles, we serve families, educators, and lifelong learners who are passionate about literature-rich education. We have expanded to include a branch in Pulaski, a branch in West DePere is coming in Summer of 2026, and we hope to build branches in several other neighboring counties in the next 2-3 years. We are proud to be a <a href="https://vela.org/" target="_blank">VELA Founder</a>.</p>
