@@ -78,6 +78,9 @@ export function App() {
           <FAQ />
         </div>
       </main>
+      <footer className="p-4">
+        <a href="/llms.txt" className="font-light text-gray-500 hover:text-black">LLMs.txt</a>
+      </footer>
     </div>
   )
 }
