@@ -7,8 +7,8 @@ import {
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 
-const GalleryImage = ({ src }: { src: string }) => (
-    <img src={src} className=" w-7/8 object-contain h-full block m-auto" />
+const GalleryImage = ({ src, alt }: { src: string, alt: string }) => (
+    <img src={src} alt={alt} className=" w-7/8 object-contain h-full block m-auto" />
 )
 
 export const FrontGallery = () => (
@@ -22,12 +22,12 @@ export const FrontGallery = () => (
             <CarouselContent className="p-0">
                 <CarouselItem className="flex justify-center items-center h-100 pl-4 pr-0">
 
-                    <GalleryImage src={gallery1} />
+                    <GalleryImage src={gallery1} alt="Gallery photo 1" />
 
                 </CarouselItem>
                 <CarouselItem className="flex justify-center items-center h-100 pl-4 pr-0">
 
-                    <GalleryImage src={gallery2} />
+                    <GalleryImage src={gallery2} alt="Gallery photo 2" />
 
                 </CarouselItem>
 

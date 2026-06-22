@@ -32,25 +32,25 @@ export function App() {
           <p>A note about the cover banner of this website: the artistic rendering of our library was done by an illustrator from the American Essence magazine when our library was featured in the Summer 2025 issue. Used with permission and gratitude. </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pb-6 ">
 
-            <ImageLink href="https://www.theepochtimes.com/bright/for-families-a-treasure-trove-of-wholesome-books-5823172" title="Read Article" img={EpochTimes} />
+            <ImageLink href="https://www.theepochtimes.com/bright/for-families-a-treasure-trove-of-wholesome-books-5823172" title="Read Article" img={EpochTimes} alt="Epoch Times article feature" />
 
 
-            <ImageLink href="https://thecardcataloglibrarians.com/the-card-catalog-database/libraries-in-the-news/america-out-loud-news" title="Listen to Podcast" img={DeansList} />
+            <ImageLink href="https://thecardcataloglibrarians.com/the-card-catalog-database/libraries-in-the-news/america-out-loud-news" title="Listen to Podcast" img={DeansList} alt="Dean's List podcast feature" />
 
 
           </div>
           <FrontGallery />
           <h2 className="font-medium justify-center text-center text-4xl pb-6">Catalog Options</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pb-6 ">
-            <ImageLink href="https://plumfieldcatalog.super.site" title="Bundle Website" img={BundleSite} />
-            <ImageLink href="https://www.libib.com/u/plumfieldlibrary" title="Catalog Website" img={CatalogImg} />
+            <ImageLink href="https://plumfieldcatalog.super.site" title="Bundle Website" img={BundleSite} alt="Bundle website catalog" />
+            <ImageLink href="https://www.libib.com/u/plumfieldlibrary" title="Catalog Website" img={CatalogImg} alt="Libib catalog" />
           </div>
           <h2 className="font-medium justify-center text-center text-4xl pb-6">Our Other Locations</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pb-6 ">
             <Card className="max-w-90 w-full md:max-w-full h-full m-auto">
               <CardHeader>
                 <div className="w-full h-auto m-0">
-                  <img src={ShireImg} className="object-cover" />
+                  <img src={ShireImg} alt="The Shire Branch location" className="object-cover" />
                 </div>
               </CardHeader>
               <CardContent>
@@ -66,7 +66,7 @@ export function App() {
             <Card className="max-w-90 w-full md:max-w-full h-full m-auto">
               <CardHeader className="m-0">
                 <div className="w-full h-auto m-0">
-                  <img src={LWLImg} className="object-cover" />
+                  <img src={LWLImg} alt="Little Way Library location" className="object-cover" />
                 </div>
               </CardHeader>
               <CardContent className="m-0">
