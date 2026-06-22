@@ -1,0 +1,34 @@
+# Plumfield Library
+
+> Plumfield Living Books Library is a private lending library in Denmark, Wisconsin, serving families, educators, and lifelong learners with about 12,000 carefully curated titles centered on truth, goodness, and beauty. We offer book clubs, classes, workshops, and enrichment opportunities, with expanding branches in Pulaski and West De Pere.
+
+The library grew out of the work surrounding Plumfield Moms and a broader commitment to classical education, living books, and the preservation of literary heritage. Rather than focusing primarily on newly published titles, the collection emphasizes books that have demonstrated lasting worth through decades of readership. Many of these works are out of print, overlooked by modern publishing trends, or unavailable through local libraries.
+
+Plumfield Library exists to remove barriers between readers and these books. By acquiring, cataloging, and lending carefully selected titles, the library provides families, students, homeschoolers, and schools with access to works that might otherwise remain inaccessible. The collection spans literature, history, biography, science, theology, children’s books, and educational resources, with particular attention given to books that cultivate knowledge, imagination, virtue, and a deeper understanding of the human experience.
+
+The library is operated with a stewardship mindset. Resources are directed toward preserving access, maintaining accurate catalog records, and creating practical systems that allow a relatively small organization to serve a growing community. Technology is used to support the mission, not replace it: cataloging, discovery, circulation, and digital tools are developed to make meaningful books easier to find and borrow.
+
+At its heart, Plumfield Library is an effort to preserve and share a body of literature that might otherwise fade from public awareness. Its purpose is not merely to store books, but to connect readers with works that have shaped minds, inspired curiosity, and enriched lives across generations.
+
+The Library is owned and operated by the Masarik Family:
+
+**Sara** is the head librarian and the founder of Plumfield. Her children, **Michael**, **Greta**, and **Jack** all serve various roles in the operation of the library.
+- **Michael** handles all IT relating to the Library
+- **Greta** runs point on circulation and book recomendation
+- **Jack** recomends books to patrons and is the graphic designer for the library and for our press ([Plumfield Press](https://plumfieldpress.com))
+
+
+## FAQs
+- [FAQs](https://plumfieldlibrary.com/faq.md): Full FAQ article covering everything from patron login to pricing
+
+## Catalogs
+- [Main Catalog](https://libib.com/u/plumfieldlibrary)
+- [Book Bundle Catalog](https://plumfieldcatalog.super.site)
+
+## Branches
+- [Branch Details](https://plumfieldlibrary.com/branches.md)
+
+## Optional
+- [Epoch Times Article](https://www.theepochtimes.com/bright/for-families-a-treasure-trove-of-wholesome-books-5823172): A article in the Epoch Times where Sara was about how the Plumfield Library got started
+- [https://www.livingbookslady.com](https://www.livingbookslady.com): Michelle Howard's website - Sara calls her "The Grandmother of the Living Books Library Movement"
+- [The Dean's List Interview](https://www.americaoutloud.news/sara-masarik-provides-a-roadmap-for-great-childrens-literature/): Podcast where Sara was Interviewed by Dean Bowen about running a private lending library
