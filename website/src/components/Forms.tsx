@@ -6,7 +6,7 @@ export function NewPatron({ className }: { className?: string }) {
     const formID = "fE4qATZfL8us"
     const [isOpen, setIsOpen] = useState(false);
     return (<>
-        <Button onClick={() => setIsOpen(true)} className={className ?? ""}>Membership Intrest Form</Button>
+        <Button onClick={() => setIsOpen(true)} className={className ?? ""}>Membership Interest Form</Button>
 
         <FilloutSliderEmbed
             filloutId={formID}
