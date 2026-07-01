@@ -37,7 +37,7 @@ export const FAQ = () => (
                     <ItemContent>
                         <ItemTitle>What are your hours?</ItemTitle>
                         <ItemDescription>
-                            At main, by appointment on Thursday-Saturday from 12:00-3:30. Patrons can schedule an appointment from the Patron Dashboard. At Shire, by appointment.
+                            At main, by appointment on Thursday from 12:00-5:00 ( starting in August, Thursdays 12:00-7:00 ). Patrons can schedule an appointment from the Patron Dashboard. At Shire, by appointment.
                         </ItemDescription>
                     </ItemContent>
                     <ItemActions >

@@ -1,7 +1,7 @@
 # Library Branches
 
 ## Main Branch
-Located in Denmark with 12,000 books, we are the main hub for the whole Plumfield Library system. Our hours are by appointment on Thursday-Saturday from 12:00-3:30. Patrons can schedule an appointment from the [Patron Dashboard](https://dashboard.plumfieldlibrary.com).
+Located in Denmark with 12,000 books, we are the main hub for the whole Plumfield Library system. Our hours are by appointment on Thursday from 12:00-5:00. Patrons can schedule an appointment from the [Patron Dashboard](https://dashboard.plumfieldlibrary.com).
 
 ## The Shire Branch
 
