@@ -57,7 +57,7 @@ const PatronDashboard = () => (
             <li>Request <a><NavLink to="/library-polices/interlibrary-loan">Interlibrary Loan</NavLink></a></li>
         </ul>
         <h2 className="pt-6">Where is my Patron Dashoard?</h2>
-        <Button asChild className="w-full"><a href="https://dashboard.plumfieldlibrary.com" target="_blank">Log In</a></Button>
+        <Button asChild ><a href="https://dashboard.plumfieldlibrary.com" target="_blank">Log In</a></Button>
         <h2 className="pt-6">How do I log in?</h2>
         <ol>
             <li>Click the login button above.</li>
