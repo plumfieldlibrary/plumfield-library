@@ -5,17 +5,17 @@ import DeansList from "@/assets/deans_list.webp"
 import EpochTimes from "@/assets/epoch_times.webp"
 import LWLImg from "@/assets/lwl.webp"
 import ShireImg from "@/assets/shire.webp"
+import { Nav } from "@/components/Nav"
 import { ImageLink } from "../components/Buttons"
 import { FAQ } from "../components/FAQ"
 import { NewPatron } from "../components/Forms"
 import { FrontGallery } from "../components/Galleries"
-import { Button } from "../components/ui/button"
 import { Card, CardContent, CardHeader } from "../components/ui/card"
 
 export function App() {
   return (
     <div>
-      <nav className="sticky p-4 top-0 z-10 bg-foreground text-background shadow-sm flex items-center"><div className="justify-start"><span className="font-bold">Plumfield Library</span></div><div className="justify-end ml-auto"><Button className="bg-background text-foreground rounded-2xl hover:bg-background hover:text-background " asChild><a href="https://dashboard.plumfieldlibrary.com">Log In</a></Button></div></nav>
+      <Nav />
       <div className="md:h-48 lg:h-64 w-full m-auto h-32 ">
         <img src={BannerImage} className="w-full h-full object-cover object-center" alt="Watercolor Sketch of the library" />
 
