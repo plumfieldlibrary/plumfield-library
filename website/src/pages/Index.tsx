@@ -26,8 +26,8 @@ export function App() {
           <h1 className="font-medium justify-center text-center text-5xl pb-6">Plumfield Library</h1>
           <Card>
             <CardContent>
-              <h3>NOTE: For the moment, the library is temporarily closed</h3>
-              <h3>Patrons, for more information, check your inbox for the most recent newsletter</h3>
+              <h3>Temporary Closure: </h3>
+              <h3>Due to some unexpected circumstances, both of our locations will be closed for the next few weeks. Patrons, please check your email for more details.</h3>
             </CardContent>
           </Card>
           <p className="pt-4">Nestled in the heart of Denmark, Wisconsin, Plumfield Living Books Library is a private lending library devoted to cultivating a love of truth, goodness, and beauty through living books. With about 12,000 carefully curated titles, we serve families, educators, and lifelong learners who are passionate about literature-rich education. We have expanded to include a branch in Pulaski, a branch in West DePere is coming in Summer of 2026, and we hope to build branches in several other neighboring counties in the next 2-3 years. We are proud to be a <a href="https://vela.org/" target="_blank">VELA Founder</a>.</p>
