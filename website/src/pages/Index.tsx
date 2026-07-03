@@ -7,7 +7,7 @@ import LWLImg from "@/assets/lwl.webp"
 import ShireImg from "@/assets/shire.webp"
 import { ImageLink } from "../components/Buttons"
 import { FAQ } from "../components/FAQ"
-import { NewPatron } from "../components/Forms"
+// import { NewPatron } from "../components/Forms"
 import { FrontGallery } from "../components/Galleries"
 import { Button } from "../components/ui/button"
 import { Card, CardContent, CardHeader } from "../components/ui/card"
@@ -24,11 +24,17 @@ export function App() {
         <div className="lg:max-w-5/8 md:max-w-2/3 sm:max-w-full mx-auto leading-loose">
 
           <h1 className="font-medium justify-center text-center text-5xl pb-6">Plumfield Library</h1>
-          <p>Nestled in the heart of Denmark, Wisconsin, Plumfield Living Books Library is a private lending library devoted to cultivating a love of truth, goodness, and beauty through living books. With about 12,000 carefully curated titles, we serve families, educators, and lifelong learners who are passionate about literature-rich education. We have expanded to include a branch in Pulaski, a branch in West DePere is coming in Summer of 2026, and we hope to build branches in several other neighboring counties in the next 2-3 years. We are proud to be a <a href="https://vela.org/" target="_blank">VELA Founder</a>.</p>
+          <Card>
+            <CardContent>
+              <h3>NOTE: For the moment, the library is temporarily closed</h3>
+              <h3>Patrons, for more information, check your inbox for the most recent newsletter</h3>
+            </CardContent>
+          </Card>
+          <p className="pt-4">Nestled in the heart of Denmark, Wisconsin, Plumfield Living Books Library is a private lending library devoted to cultivating a love of truth, goodness, and beauty through living books. With about 12,000 carefully curated titles, we serve families, educators, and lifelong learners who are passionate about literature-rich education. We have expanded to include a branch in Pulaski, a branch in West DePere is coming in Summer of 2026, and we hope to build branches in several other neighboring counties in the next 2-3 years. We are proud to be a <a href="https://vela.org/" target="_blank">VELA Founder</a>.</p>
           <p>At Plumfield, books are just the beginning. Our vibrant community enjoys a variety of enrichment opportunities, including book clubs, handicrafts classes, workshops for moms, home education curriculum consultation, and creative writing workshops.</p>
-          <div className="flex justify-center pb-6">
+          {/* <div className="flex justify-center pb-6">
             <NewPatron className=" w-full mx-auto text-2xl rounded-2xl" />
-          </div>
+          </div> */}
           <p>A note about the cover banner of this website: the artistic rendering of our library was done by an illustrator from the American Essence magazine when our library was featured in the Summer 2025 issue. Used with permission and gratitude. </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pb-6 ">
 
