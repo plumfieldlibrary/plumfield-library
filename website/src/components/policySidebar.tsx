@@ -14,14 +14,15 @@ export function AppSidebar() {
             <SidebarContent>
                 <SidebarGroup>
                     <SidebarContent className="ps-4">
-                        <NavLink to="/library-polices" className="text-2xl">Library Polices</NavLink>
+                        <NavLink to="/library-policies" className="text-2xl">Library Polices</NavLink>
                         <div className="ps-3 flex flex-col pt-2">
-                            <NavLink to="/library-polices/holds" className="text-link hover:text-white text-2xl md:text-lg ">Holds</NavLink>
-                            <NavLink to="/library-polices/classes" className="text-link hover:text-white text-2xl md:text-lg">Classes</NavLink>
-                            <NavLink to="/library-polices/renewals" className="text-link hover:text-white text-2xl md:text-lg">Renewals</NavLink>
-                            <NavLink to="/library-polices/interlibrary-loan" className="text-link hover:text-white text-2xl md:text-lg">Interlibrary Loan</NavLink>
-                            <NavLink to="/library-polices/dashboard" className="text-link hover:text-white text-2xl md:text-lg">Patron Dashboard</NavLink>
-                            <NavLink to="/library-polices/volunteers" className="text-link hover:text-white text-2xl md:text-lg">Volunteer Positions</NavLink>
+                            <NavLink to="/library-policies/holds" className={({ isActive }) => `hover:text-white text-2xl md:text-lg ${isActive ? "text-white" : "text-link"} `}>Holds</NavLink>
+                            <NavLink to="/library-policies/classes" className={({ isActive }) => `hover:text-white text-2xl md:text-lg ${isActive ? "text-white" : "text-link"} `}>Classes</NavLink>
+                            <NavLink to="/library-policies/renewals" className={({ isActive }) => `hover:text-white text-2xl md:text-lg ${isActive ? "text-white" : "text-link"} `}>Renewals</NavLink>
+                            <NavLink to="/library-policies/interlibrary-loan" className={({ isActive }) => `hover:text-white text-2xl md:text-lg ${isActive ? "text-white" : "text-link"} `}>Interlibrary Loan</NavLink>
+                            <NavLink to="/library-policies/dashboard" className={({ isActive }) => `hover:text-white text-2xl md:text-lg ${isActive ? "text-white" : "text-link"} `}>Patron Dashboard</NavLink>
+                            <NavLink to="/library-policies/volunteers" className={({ isActive }) => `hover:text-white text-2xl md:text-lg ${isActive ? "text-white" : "text-link"} `}>Volunteer Positions</NavLink>
+                            <NavLink to="/library-policies/young-children" className={({ isActive }) => `hover:text-white text-2xl md:text-lg ${isActive ? "text-white" : "text-link"} `}>Young Children</NavLink>
 
                         </div>
                     </SidebarContent>

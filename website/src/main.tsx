@@ -16,7 +16,7 @@ createRoot(document.getElementById("root")!).render(
         <TooltipProvider>
           <Routes>
             <Route path="/" element={<App />} />
-            <Route path="/library-polices" element={<LibraryPolices />} >
+            <Route path="/library-policies" element={<LibraryPolices />} >
               <Route index element={<PolicyLandingPage />}></Route>
               <Route path=":section" element={<PolicySection />} />
             </Route>

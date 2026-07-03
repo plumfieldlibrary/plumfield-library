@@ -15,15 +15,15 @@ export function PolicyLandingPage() {
             </div>
             <div>
                 <h2>Patron Dashboard</h2>
-                <Button asChild><NavLink to="/library-polices/dashboard">Read Policy</NavLink></Button>
+                <Button asChild><NavLink to="/library-policies/dashboard">Read Policy</NavLink></Button>
             </div>
             <div>
                 <h2>Library Classes</h2>
-                <Button asChild><NavLink to="/library-polices/classes">Read Policy</NavLink></Button>
+                <Button asChild><NavLink to="/library-policies/classes">Read Policy</NavLink></Button>
             </div>
             <div>
                 <h2>Renewals</h2>
-                <Button asChild><NavLink to="/library-polices/renewals">Read Policy</NavLink></Button>
+                <Button asChild><NavLink to="/library-policies/renewals">Read Policy</NavLink></Button>
             </div>
         </div>
     </div>
@@ -42,7 +42,7 @@ export function LibraryPolices() {
                             <div className="sticky pt-4 top-16 z-10 border-b bg-background"><SidebarTrigger /></div>
                             <div className="p-4">
                                 <Outlet />
-                                <p className="fixed bottom-0 text-gray-400"><em>Last Updated: 7/1/2026</em></p>
+                                <p className=" text-gray-400"><em>Last Updated: 7/1/2026</em></p>
                             </div>
                         </div>
                     </div>
