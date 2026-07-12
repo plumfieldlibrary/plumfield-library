@@ -2,8 +2,10 @@ import { NavLink, useParams } from "react-router";
 import { NotFoundPage } from "./404";
 import { Button } from "./ui/button";
 
+import { SidebarWrapper } from "./PolicyWrapper";
+
 const Holds = () => (
-    <div>
+    <SidebarWrapper>
         <h1>Holds</h1>
         <h2>Why can’t I place holds from the patron dashboard?</h2>
         <p>Due to limitations in our library software, holds can only be placed from the Libib website:</p>
@@ -12,10 +14,10 @@ const Holds = () => (
         <p>Please place holds at least <strong className="text-white">48 hours</strong> before you plan to pick up, so we have time to pull them at a gentle, sustainable pace.</p>
         <h2>What if I want to pick up holds from a different branch?</h2>
         <p>Please refer to the <a><NavLink to="/library-policies/interlibrary-loan" className="a">Interlibrary Loan section</NavLink></a></p>
-    </div>
+    </SidebarWrapper>
 )
 const ILL = () => (
-    <div>
+    <SidebarWrapper>
         <h1>Interlibrary loan</h1>
         <p>This is a brand new endeavor for us. While large public libraries have professional systems in place, we are creating our own from scratch. We kindly ask for your patience as we work out the details and improve the process.</p>
         <p className="text-lg">Here is how it works:</p>
@@ -39,10 +41,10 @@ const ILL = () => (
             <li>No renewals are available for ILL books at this time.</li>
             <li>It may take up to 2 weeks for your book to ship.</li>
         </ul>
-    </div>
+    </SidebarWrapper>
 )
 const ParentPresent = () => (
-    <div>
+    <SidebarWrapper>
         <h1>Parent-Present Policy</h1>
         <p>Plumfield Living Library is a family-centered, parent-present community library. Our classes, clubs, gatherings, and library visits are designed to support families in a warm and shared learning environment, not to function as a school, daycare, camp, or drop-off program.</p>
 
@@ -57,11 +59,11 @@ const ParentPresent = () => (
         <p>If a child’s needs, behavior, or level of supervision becomes unsafe, disruptive, or beyond what Plumfield can reasonably accommodate, Plumfield may ask the parent or responsible adult to assist, step out with the child, or withdraw from the activity for the day. This is not punitive; it is simply part of caring well for the whole group and maintaining the kind of environment Plumfield is meant to be.</p>
 
         <p>By participating in Plumfield Living Library activities, families acknowledge that Plumfield is a parent-present environment and agree that parents or responsible adults remain responsible for their own children at all times.</p>
-    </div>
+    </SidebarWrapper>
 )
 
 const PatronDashboard = () => (
-    <div>
+    <SidebarWrapper>
         <h1>Patron Dashboard</h1>
         <h2>What is my Patron Dashboard?</h2>
         <p>The Patron Dashboard is a hub where you can:</p>
@@ -83,11 +85,11 @@ const PatronDashboard = () => (
             <li>Enter your email into the Email field and hit submit</li>
             <li>Check your inbox for the one-time sign-in link that you will be sent!</li>
         </ol>
-    </div>
+    </SidebarWrapper>
 )
 
 const Classes = () => (
-    <div>
+    <SidebarWrapper>
         <h1>Library Classes</h1>
         <h2>How do I sign up for classes?</h2>
         <p>If you have a Full Membership, just visit your <a href="https://dashboard.plumfieldlibrary.com" target="_blank">Patron Dashboard!</a></p>
@@ -98,11 +100,11 @@ const Classes = () => (
         <h2>Cancellation policy</h2>
         <p>All classes are non-refundable. If you need to make changes to your classes due to schedule conflicts or illness, you may keep your materials to do on your own, or you may donate them back to the library for future projects.</p>
         <p>If the class is cancelled by the teacher, we will do our best to come with a fair solution to enrollment fees and possible reschedule dates.</p>
-    </div>
+    </SidebarWrapper>
 )
 
 const Renewals = () => (
-    <div>
+    <SidebarWrapper>
         <h1>Renewals</h1>
         <p>Our library does not offer renewals at this time. </p>
         <p>There are a few reasons for this:</p>
@@ -112,20 +114,22 @@ const Renewals = () => (
             <li>Tracking renewals manually adds extra administrative work for our small team, especially with having multiple locations to keep in sync</li>
         </ul>
         <p><strong>Special note for new mothers:</strong> During maternity leave, patrons are welcome to keep books for up to three months instead of the standard 45 days. When that time comes, just let us know, and we’ll gladly set that up for you.</p>
-    </div>
+    </SidebarWrapper>
 )
 
 const Volunteers = () => (
-    <div>
+    <SidebarWrapper>
         <h1>
             Volunteers
         </h1>
         <p>At the moment, we are in a period of significant transition as we expand into our new branches and launch programs like the Plumfield Explorers.</p>
         <p>Because of this, we have temporarily paused taking on new interns or volunteers. We hope to reopen the internship program next school year, once our schedule, commuting, and programming settle into their new rhythm.</p>
-    </div>
+    </SidebarWrapper>
 )
+
 export function PolicySection() {
     const { section } = useParams();
+
 
     if (section) {
         switch (section) {

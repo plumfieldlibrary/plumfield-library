@@ -1,7 +1,7 @@
 import {
     Sidebar,
     SidebarContent,
-    SidebarFooter,
+    // SidebarFooter,
     SidebarGroup,
     SidebarHeader
 } from "@/components/ui/sidebar"
@@ -29,7 +29,10 @@ export function AppSidebar() {
                 </SidebarGroup>
                 <SidebarGroup />
             </SidebarContent>
-            <SidebarFooter />
+            {/* <SidebarFooter className="sticky bottom-0">
+                <p className=" text-gray-400 sticky bottom-0"><em>Last Updated: 7/12/2026</em></p>
+
+            </SidebarFooter> */}
         </Sidebar>
     )
 }

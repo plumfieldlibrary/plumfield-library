@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider.tsx";
 import App from "@/pages/Index.tsx";
 import { PolicySection } from "./components/PolicySection";
 import "./index.css";
+import { ScrollToTop } from "./lib/top-scroll";
 import { LibraryPolices, PolicyLandingPage } from "./pages/LibraryPolices";
 
 createRoot(document.getElementById("root")!).render(
@@ -14,6 +15,7 @@ createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <ThemeProvider>
         <TooltipProvider>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<App />} />
             <Route path="/library-policies" element={<LibraryPolices />} >
