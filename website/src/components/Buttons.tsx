@@ -9,7 +9,7 @@ export const ImageLink = ({ href, title, img, alt }: { href: string, title: stri
     <Card className="max-w-90 w-full md:max-w-full h-full m-auto">
         <CardHeader>
             <div className="w-full h-auto m-auto">
-                <img src={img} alt={alt} className="object-cover" />
+                <img src={img} alt={alt} className="object-cover" loading="lazy" />
             </div>
         </CardHeader>
         <CardFooter>

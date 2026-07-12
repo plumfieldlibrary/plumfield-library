@@ -17,7 +17,7 @@ export function App() {
     <div>
       <Nav />
       <div className="md:h-48 lg:h-64 w-full m-auto h-32 ">
-        <img src={BannerImage} className="w-full h-full object-cover object-center" alt="Watercolor Sketch of the library" />
+        <img src={BannerImage} className="w-full h-full object-cover object-center" alt="Watercolor Sketch of the library" fetchPriority="high" />
 
       </div>
       <main className="py-6 px-4">
@@ -45,37 +45,39 @@ export function App() {
             <ImageLink href="https://plumfieldcatalog.super.site" title="Bundle Website" img={BundleSite} alt="Bundle website catalog" />
             <ImageLink href="https://www.libib.com/u/plumfieldlibrary" title="Catalog Website" img={CatalogImg} alt="Libib catalog" />
           </div>
-          <h2 className="font-medium justify-center text-center text-4xl pb-6">Our Other Locations</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pb-6 ">
-            <Card className="max-w-90 w-full md:max-w-full h-full m-auto">
-              <CardHeader>
-                <div className="w-full h-auto m-0">
-                  <img src={ShireImg} alt="The Shire Branch location" className="object-cover" />
-                </div>
-              </CardHeader>
-              <CardContent>
-                <h3 className="text-2xl">The Shire Branch</h3>
-                <p>Located on South Chase Road in Pulaski, The Shire Branch is a marvelous little branch with about 2,000 books generously hosted by the Maternoski family.</p>
-                <ul>
-                  <li>They are open by Appointment on Thursdays and Saturdays from 12:00-4:00</li>
-                  <li>When there are handicrafts at the Branch on Fridays, the library will be open.</li>
-                  <li>To schedule and appointment or find their address, simply log into your Patron Dashboard</li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card className="max-w-90 w-full md:max-w-full h-full m-auto">
-              <CardHeader className="m-0">
-                <div className="w-full h-auto m-0">
-                  <img src={LWLImg} alt="Little Way Library location" className="object-cover" />
-                </div>
-              </CardHeader>
-              <CardContent className="m-0">
-                <h3 className="text-2xl">Little Way Library</h3>
-                Coming soon to West DePere (near Scheuring Road exit), the Keane Family is busy making preparations to open our newest branch! We hope to have thousands of books available at this location as well as making it another destination for classes, inter-library loan, and community. Stay tuned for more details! Look for an opening in the summer of 2026. Please pray for us as we do the work of building this beautiful new library home.
-              </CardContent>
-            </Card>
-          </div>
+          <h2 className="font-medium justify-center text-center text-4xl pb-6">Branches</h2>
+
+          <Card className="max-w-90 w-full md:max-w-full h-full m-auto">
+            <CardHeader>
+              <div className="w-full h-auto m-0">
+                <img src={ShireImg} alt="The Shire Branch location" className="object-cover" loading="lazy" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <h3 className="text-2xl">The Shire Branch</h3>
+              <p>Located on South Chase Road in Pulaski, The Shire Branch is a marvelous little branch with about 2,000 books generously hosted by the Maternoski family.</p>
+              <ul>
+                <li>They are open by Appointment on Thursdays and Saturdays from 12:00-4:00</li>
+                <li>When there are handicrafts at the Branch on Fridays, the library will be open.</li>
+                <li>To schedule and appointment or find their address, simply log into your Patron Dashboard</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <h2 className="font-medium justify-center text-center text-4xl p-6">Depots</h2>
+          <Card className=" m-auto">
+            <CardHeader className="m-0">
+              <div className="w-full h-auto m-0">
+                <img src={LWLImg} alt="Little Way Library location" className="object-cover" loading="lazy" />
+              </div>
+            </CardHeader>
+            <CardContent className="m-0">
+              <h3 className="text-2xl">Little Way Library</h3>
+              Coming soon to West DePere (near Scheuring Road exit), the Keane Family is busy making preparations to open our first depot! We hope to have thousands of books available at this location for a interlibrary loan distribution center. Stay tuned for more details! Look for an opening in the summer of 2026. Please pray for us as we do the work of building this beautiful new library home.
+            </CardContent>
+          </Card>
+          <h2 className="py-6 font-medium justify-center text-center text-4xl">FAQs</h2>
           <FAQ />
+
         </div>
       </main>
       <footer className="p-4">

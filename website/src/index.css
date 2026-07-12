@@ -165,6 +165,7 @@
   }
   html {
     @apply font-serif;
+    font-size: 112%;
   }
   a:not([class]) {
     color: #539dca;
