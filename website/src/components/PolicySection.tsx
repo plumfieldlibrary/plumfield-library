@@ -1,4 +1,5 @@
 import { NavLink, useParams } from "react-router";
+import { NotFoundPage } from "./404";
 import { Button } from "./ui/button";
 
 const Holds = () => (
@@ -40,17 +41,22 @@ const ILL = () => (
         </ul>
     </div>
 )
-const YoungChildren = () => (
+const ParentPresent = () => (
     <div>
-        <h1>Young Children in Classes</h1>
-        <p>We are so grateful for the grace our families have extended to us this past year as we've stretched our offerings to include larger enrollments, more technical classes, and so many new things we're still learning from. Hosting these has taught us a great deal about how to do this well—and in that spirit, we'd like to share a small but important policy that helps us protect the warmth and quality of everything we offer.</p>
-        <h2 className="pt-6">Do my young children need to stay with me during class?</h2>
-        <p>Beginning this season, children <strong className="text-white">age 5 and under</strong> will need an <strong className="text-white">adult or a teenage sibling helper</strong> with them for the <strong className="text-white">entire class</strong>—across all of our programming, including handicrafts, Plumfield Explorers, and our upcoming songbook and history classes.</p>
-        <h2 className="pt-6">Why do you ask for this?</h2>
-        <p>As more and more young participants have been joining our classes, we've come to see how essential it is for our youngest students to have a hands-on adult or teen sibling helper close by. This gives each little one the very best experience possible, and it frees our teachers to do what they love most—teaching the whole group well, all at once.</p>
-        <h2 className="pt-6">Can the library provide childcare or teen helpers?</h2>
-        <p>Not as part of our classes, though we wish we could. Most teens in our community are already generously committed elsewhere, and offering childcare would gently shift us away from the shared, family-centered vision behind our library.</p>
-        <p>Thank you, as always, for helping us keep Plumfield a place of wonder-led learning.</p>
+        <h1>Parent-Present Policy</h1>
+        <p>Plumfield Living Library is a family-centered, parent-present community library. Our classes, clubs, gatherings, and library visits are designed to support families in a warm and shared learning environment, not to function as a school, daycare, camp, or drop-off program.</p>
+
+        <p>For that reason, a parent, guardian, or responsible adult must remain on site and available for the full duration of any Plumfield class, club, gathering, or library visit unless Plumfield has clearly stated otherwise in writing. Plumfield teachers and leaders are responsible for guiding the activity or instruction, but parents remain responsible for the supervision, safety, behavior, and needs of their own children while participating in Plumfield activities.</p>
+
+        <p>This expectation applies at all Plumfield locations, including the main library, branch libraries, outdoor areas, and any off-site gathering place used for a Plumfield activity. It also applies to siblings or other children who may be present but are not formally participating in a class or activity.</p>
+
+        <p>Children should remain with or near their parent/responsible adult unless the structure of the class clearly allows otherwise. Parents are expected to remain attentive and available to assist their children as needed, especially during activities involving outdoor time, stairs, crowded rooms, shelves, handwork, art materials, sewing tools, scissors, needles, glue guns, or other ordinary classroom and craft materials.</p>
+
+        <p>Children age 5 and under need close support from a parent, guardian, or responsible helper for the full duration of any Plumfield class or activity. This helps us preserve a peaceful, safe, and welcoming environment for all families and allows our teachers to focus on instruction rather than general childcare.</p>
+
+        <p>If a child’s needs, behavior, or level of supervision becomes unsafe, disruptive, or beyond what Plumfield can reasonably accommodate, Plumfield may ask the parent or responsible adult to assist, step out with the child, or withdraw from the activity for the day. This is not punitive; it is simply part of caring well for the whole group and maintaining the kind of environment Plumfield is meant to be.</p>
+
+        <p>By participating in Plumfield Living Library activities, families acknowledge that Plumfield is a parent-present environment and agree that parents or responsible adults remain responsible for their own children at all times.</p>
     </div>
 )
 
@@ -135,11 +141,11 @@ export function PolicySection() {
                 return <Volunteers />
             case "renewals":
                 return <Renewals />
-            case "young-children":
-                return <YoungChildren />
+            case "parent-present":
+                return <ParentPresent />
             default:
                 break;
         }
     }
-    return <p>404</p>
+    return <NotFoundPage />
 }

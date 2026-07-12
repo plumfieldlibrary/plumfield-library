@@ -22,7 +22,7 @@ export function AppSidebar() {
                             <NavLink to="/library-policies/interlibrary-loan" className={({ isActive }) => `hover:text-white text-2xl md:text-lg ${isActive ? "text-white" : "text-link"} `}>Interlibrary Loan</NavLink>
                             <NavLink to="/library-policies/dashboard" className={({ isActive }) => `hover:text-white text-2xl md:text-lg ${isActive ? "text-white" : "text-link"} `}>Patron Dashboard</NavLink>
                             <NavLink to="/library-policies/volunteers" className={({ isActive }) => `hover:text-white text-2xl md:text-lg ${isActive ? "text-white" : "text-link"} `}>Volunteer Positions</NavLink>
-                            <NavLink to="/library-policies/young-children" className={({ isActive }) => `hover:text-white text-2xl md:text-lg ${isActive ? "text-white" : "text-link"} `}>Young Children</NavLink>
+                            <NavLink to="/library-policies/parent-present" className={({ isActive }) => `hover:text-white text-2xl md:text-lg ${isActive ? "text-white" : "text-link"} `}>Parent-Present Policy</NavLink>
 
                         </div>
                     </SidebarContent>
