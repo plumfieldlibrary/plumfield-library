@@ -25,7 +25,6 @@ export const FAQ = () => (
                             <ul>
                                 <li><strong>Main:</strong> New Denmark, WI</li>
                                 <li><strong>Shire:</strong> Pulaski, WI</li>
-                                <li><strong>Little Way:</strong> De Pere, WI</li>
                             </ul>
                         </ItemDescription>
                     </ItemContent>

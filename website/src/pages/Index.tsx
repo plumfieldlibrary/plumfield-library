@@ -3,7 +3,7 @@ import BundleSite from "@/assets/bundles.webp"
 import CatalogImg from "@/assets/Catalog.webp"
 import DeansList from "@/assets/deans_list.webp"
 import EpochTimes from "@/assets/epoch_times.webp"
-import LWLImg from "@/assets/lwl.webp"
+
 import ShireImg from "@/assets/shire.webp"
 import { Nav } from "@/components/Nav"
 import { ImageLink } from "../components/Buttons"
@@ -63,18 +63,7 @@ export function App() {
               </ul>
             </CardContent>
           </Card>
-          <h2 className="font-medium justify-center text-center text-4xl p-6">Depots</h2>
-          <Card className=" m-auto">
-            <CardHeader className="m-0">
-              <div className="w-full h-auto m-0">
-                <img src={LWLImg} alt="Little Way Library location" className="object-cover" loading="lazy" />
-              </div>
-            </CardHeader>
-            <CardContent className="m-0">
-              <h3 className="text-2xl">Little Way Library</h3>
-              Coming soon to West DePere (near Scheuring Road exit), the Keane Family is busy making preparations to open our first depot! We hope to have thousands of books available at this location for a interlibrary loan distribution center. Stay tuned for more details! Look for an opening in the summer of 2026. Please pray for us as we do the work of building this beautiful new library home.
-            </CardContent>
-          </Card>
+
           <h2 className="py-6 font-medium justify-center text-center text-4xl">FAQs</h2>
           <FAQ />
 

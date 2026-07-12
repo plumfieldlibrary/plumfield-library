@@ -10,7 +10,3 @@ Located on South Chase Road in Pulaski, The Shire Branch is a marvelous little b
 - They are open by Appointment on Thursdays and Saturdays from 12:00-4:00
 - When there are handicrafts at the Branch on Fridays, the library will be open.
 - To schedule your visit, simply log in to your patron dashboard and click the Branch Appointment button.
-
-## Little Way Library
-
-Coming soon to West De Pere (near Scheuring Road exit), the Keane Family is busy making preparations to open our newest branch! We hope to have thousands of books available at this location as well as making it another destination for classes, inter-library loan, and community. Stay tuned for more details! Look for an opening in the summer of 2026. Please pray for us as we do the work of building this beautiful new library home.
