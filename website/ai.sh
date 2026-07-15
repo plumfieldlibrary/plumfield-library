@@ -1,4 +1,4 @@
-# Plumfield Library
+prefix="# Plumfield Library
 
 > Plumfield Living Books Library is a private lending library in Denmark, Wisconsin, serving families, educators, and lifelong learners with about 12,000 carefully curated titles centered on truth, goodness, and beauty. We offer book clubs, classes, workshops, and enrichment opportunities, with a branch in Pulaski.
 
@@ -16,28 +16,13 @@ The Library is owned and operated by the Masarik Family:
 - **Michael** handles all IT relating to the Library
 - **Greta** runs point on circulation and book recomendation
 - **Jack** recomends books to patrons and is the graphic designer for the library and for our press ([Plumfield Press](https://plumfieldpress.com))
-
-
-## FAQs
-- [FAQs](https://plumfieldlibrary.com/faq.md): Full FAQ article covering everything from patron login to pricing
-
-## Polices
-- [Classes](https://plumfieldlibrary.com/policies/classes.md)
-- [Patron Dashboard](https://plumfieldlibrary.com/policeis/dashboard.md)
-- [Holds](https://plumfieldlibrary.com/policies/holds.md)
-- [Interlibrary Loan](https://plumfieldlibrary.com/policies/interlibrary-loan.md)
-- [Parent-Present Policy](https://plumfieldlibrary.com/policies/parent-present.md)
-- [Renewals](https://plumfieldlibrary.com/policies/renewals.md)
-- [Volunteer Positions](https://plumfieldlibrary.com/policies/volunteers.md)
-
-## Catalogs
-- [Main Catalog](https://libib.com/u/plumfieldlibrary)
-- [Book Bundle Catalog](https://plumfieldcatalog.super.site)
-
-## Branches
-- [Branch Details](https://plumfieldlibrary.com/branches.md)
-
-## Optional
-- [Epoch Times Article](https://www.theepochtimes.com/bright/for-families-a-treasure-trove-of-wholesome-books-5823172): A article in the Epoch Times where Sara was about how the Plumfield Library got started
-- [https://www.livingbookslady.com](https://www.livingbookslady.com): Michelle Howard's website - Sara calls her "The Grandmother of the Living Books Library Movement"
-- [The Dean's List Interview](https://www.americaoutloud.news/sara-masarik-provides-a-roadmap-for-great-childrens-literature/): Podcast where Sara was Interviewed by Dean Bowen about running a private lending library
+"
+filepath="./public/llms-full.txt"
+echo "Building llms-full.txt"
+echo "$prefix" > "$filepath"
+for file in ./public/policies/*.md; do
+    echo "" >> "$filepath"
+    echo "---" >> "$filepath"
+    echo "" >> "$filepath"
+    sed -E 's/^(#+) /#\1 /' "$file" >> "$filepath"
+done
