@@ -3,7 +3,8 @@ import BundleSite from "@/assets/bundles.webp"
 import CatalogImg from "@/assets/Catalog.webp"
 import DeansList from "@/assets/deans_list.webp"
 import EpochTimes from "@/assets/epoch_times.webp"
-
+// @ts-expect-error: ts(2307) - TS HATES vite-imagetools imports
+import MainImg from "@/assets/main.png?format=avif"
 import ShireImg from "@/assets/shire.webp"
 import { Nav } from "@/components/Nav"
 import { DoTerraButton, ImageLink } from "../components/Buttons"
@@ -46,24 +47,39 @@ export function App() {
             <ImageLink href="https://www.libib.com/u/plumfieldlibrary" title="Catalog Website" img={CatalogImg} alt="Libib catalog" />
           </div>
           <h2 className="font-medium justify-center text-center text-4xl pb-6">Branches</h2>
-
-          <Card className="max-w-90 w-full md:max-w-full h-full m-auto">
-            <CardHeader>
-              <div className="w-full h-auto m-0">
-                <img src={ShireImg} alt="The Shire Branch location" className="object-cover" loading="lazy" />
-              </div>
-            </CardHeader>
-            <CardContent>
-              <h3 className="text-2xl">The Shire Branch</h3>
-              <p>Located on South Chase Road in Pulaski, The Shire Branch is a marvelous little branch with about 2,000 books generously hosted by the Maternoski family.</p>
-              <ul>
-                <li>They are open by Appointment on Thursdays and Saturdays from 12:00-4:00</li>
-                <li>When there are handicrafts at the Branch on Fridays, the library will be open.</li>
-                <li>To schedule and appointment or find their address, simply log into your Patron Dashboard</li>
-              </ul>
-            </CardContent>
-          </Card>
-
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <Card className="max-w-90 w-full md:max-w-full h-full m-auto">
+              <CardHeader>
+                <div className="w-full h-auto m-0">
+                  <img src={MainImg} alt="The Main Branch location" className="object-cover" />
+                </div>
+              </CardHeader>
+              <CardContent>
+                <h3 className="text-2xl">The Main Library</h3>
+                <p>Located on South Chase Road in Pulaski, The Shire Branch is a marvelous little branch with about 2,000 books generously hosted by the Maternoski family.</p>
+                <ul>
+                  <li>We are open by Appointment on Thursdays 12:00 - 7:00, and some Tuesdays</li>
+                  <li>To schedule and appointment or find their address, simply log into your Patron Dashboard</li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card className="max-w-90 w-full md:max-w-full h-full m-auto">
+              <CardHeader>
+                <div className="w-full h-auto m-0">
+                  <img src={ShireImg} alt="The Shire Branch location" className="object-cover" />
+                </div>
+              </CardHeader>
+              <CardContent>
+                <h3 className="text-2xl">The Shire Branch</h3>
+                <p>Located on South Chase Road in Pulaski, The Shire Branch is a marvelous little branch with about 2,000 books generously hosted by the Maternoski family.</p>
+                <ul>
+                  <li>They are open by Appointment on Thursdays and Saturdays from 12:00-4:00</li>
+                  <li>When there are handicrafts at the Branch on Fridays, the library will be open.</li>
+                  <li>To schedule and appointment or find their address, simply log into your Patron Dashboard</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
           <h2 className="py-6 font-medium justify-center text-center text-4xl">FAQs</h2>
           <FAQ />
           <h2 id="doterra" className="py-6 font-medium justify-center text-center text-4xl">doTerra</h2>

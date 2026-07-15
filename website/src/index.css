@@ -184,13 +184,13 @@
     @apply pb-4 text-[16px];
   }
   h1 {
-    @apply pb-8 text-3xl;
+    @apply py-8 text-3xl;
   }
   h2 {
-    @apply pb-6 text-2xl;
+    @apply py-6 text-2xl;
   }
   ul {
-    @apply ml-3 list-disc [&>li]:mt-2;
+    @apply ml-3 list-disc pb-4 [&>li]:mt-2;
   }
   ol {
     @apply ml-3 list-decimal [&>li]:mt-2;

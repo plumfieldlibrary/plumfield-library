@@ -8,11 +8,11 @@ const Holds = () => (
     <SidebarWrapper>
         <h1>Holds</h1>
         <h2>Why can’t I place holds from the patron dashboard?</h2>
-        <p>Due to limitations in our library software, holds can only be placed from the Libib website:</p>
+        <p>Due to the fact we use professional library software, holds can only be placed from the Libib website:</p>
         <Button asChild className="m-auto "><a href="https://www.libib.com/u/plumfieldlibrary" target="_blank" className="">Online Catalog</a></Button>
         <h2 className="pt-6">How much notice do I need for holds?</h2>
-        <p>Please place holds at least <strong className="text-white">48 hours</strong> before you plan to pick up, so we have time to pull them at a gentle, sustainable pace.</p>
-        <h2>What if I want to pick up holds from a different branch?</h2>
+        <p>Please place holds at least <span className="underline">48 hours</span> before you plan to pick up, so we have time to pull them at a gentle, sustainable pace.</p>
+        <h2>Where do I pickup my holds?</h2>
         <p>Please refer to the <a><NavLink to="/library-policies/interlibrary-loan" className="a">Interlibrary Loan section</NavLink></a></p>
     </SidebarWrapper>
 )
@@ -106,14 +106,10 @@ const Classes = () => (
 const Renewals = () => (
     <SidebarWrapper>
         <h1>Renewals</h1>
-        <p>Our library does not offer renewals at this time. </p>
-        <p>There are a few reasons for this:</p>
-        <ul>
-            <li>Our software cannot easily manage renewals.</li>
-            <li>With over 100 families sharing a small collection, we need to keep books circulating.</li>
-            <li>Tracking renewals manually adds extra administrative work for our small team, especially with having multiple locations to keep in sync</li>
-        </ul>
-        <p><strong>Special note for new mothers:</strong> During maternity leave, patrons are welcome to keep books for up to three months instead of the standard 45 days. When that time comes, just let us know, and we’ll gladly set that up for you.</p>
+        <p>What a gift it is to be part of a library that has grown to more than 100 families sharing one collection! With so many readers enjoying our books, keeping them circulating is one of the most important ways we steward what we have. For that reason, we don't offer renewals at this time. The 45-day loan period gives each family a generous window with their books, and returning them on time means the next family gets their turn — that's the heart of how a shared library works.</p>
+        <p>That said, if you're not quite finished with a book, you're always welcome to bring it back to the library to be checked in and then checked out anew, as long as no one else is waiting for it.</p>
+        <p>There are practical reasons behind our renewal policy as well: our software can't easily manage renewals, and tracking them by hand across multiple locations would add more than our small team can sustain.</p>
+        <p><span className="underline">Special note for new mothers:</span> During maternity leave, you're welcome to keep your books for up to three months instead of the standard 45 days. Just let us know when that season arrives, and we'll gladly set it up for you.</p>
     </SidebarWrapper>
 )
 
@@ -122,34 +118,78 @@ const Volunteers = () => (
         <h1>
             Volunteers
         </h1>
-        <p>At the moment, we are in a period of significant transition as we expand into our new branches and launch programs like the Plumfield Explorers.</p>
-        <p>Because of this, we have temporarily paused taking on new interns or volunteers. We hope to reopen the internship program next school year, once our schedule, commuting, and programming settle into their new rhythm.</p>
+        <p>We're so grateful for the many hearts eager to give their time to Plumfield — it's one of the surest signs of a community that loves what we're building together.</p>
+        <p>At the moment, we're in the middle of a season of significant growth, creating and launching new kinds of classes and book clubs, and bringing more than 30 books back into print. Because so much of our energy is going into getting to know our new families while managing our many projects, we've temporarily paused taking on new interns and volunteers. We simply want to be able to train and welcome people well, rather than in the midst of transition.</p>
+        <p>In the meantime, we're prayerfully discerning the best ways to train and support volunteers in the seasons ahead, and we'll discern when to relaunch our internship program in the future. We don't yet know exactly how or when this will take shape, but we look forward to sharing more once it does.</p>
     </SidebarWrapper>
 )
 
+const MainRules = () => (
+    <SidebarWrapper>
+        <h1 className="pb-0">Main Library Rules</h1>
+        <h2>Indoors</h2>
+        <ul>
+            <li>Have fun with the trains and toys in the children's room — but no shouting, rough-housing, wrestling, throwing, or hide-and-seek anywhere inside the house.</li>
+            <li>Enjoy hunting for books, but please no playing on the stairs or railings; it isn't safe.</li>
+            <li>Join us in the living room and dining room only on club days when an adult is present. No children should be upstairs without a library volunteer/teacher. The bedrooms are always, 100% of the time, off limits. The other rooms in the basement are always, 100% of the time, off limits.</li>
+            <li>Knit, crochet, read, or visit on the couches to your heart's content during a class or club — but no romping or pillow fights.</li>
+        </ul>
+        <h2>Outdoors</h2>
+        <ul>
+            <li>The front yard is yours to enjoy. The side yard, back yard, camper area, and garage are not part of the library.</li>
+            <li>Park anywhere in the cul-de-sac, but please not in the driveway — small children and dogs are often about.</li>
+        </ul>
+        <h2>Our Animals</h2>
+        <ul>
+            <li>The dogs are delighted you're here! Our cat would rather nap — please let him be and leave his door alone.</li>
+            <li>The dogs think everything is a toy, even your lovie or lunch bag. Please don't offer the dogs toys, balls, or food — nothing near their mouths, for their sake and yours.</li>
+            <li>They love a gentle pet, but please don't wrestle, throw things for them, or try to teach them tricks.</li>
+        </ul>
+    </SidebarWrapper>
+)
+
+const ShireRules = () => (
+    <SidebarWrapper>
+        <h1 className="pb-0">Shire Branch Rules</h1>
+        <h2>Indoors</h2>
+        <ul>
+            <li>Have fun playing with trains and toys in the children’s area in the basement, but please no shouting, rough-housing, wrestling, throwing or playing hide-and-seek anywhere in the house.</li>
+            <li>The basement bathroom and basement living room are open for use but the basement kitchen, root cellar, back furnace room and office in the basement are not part of the library.</li>
+            <li>Have fun finding books in the library! But no playing on the stairs and railings is allowed because it is dangerous.</li>
+            <li>Join us in the living room and dining room on club days when an adult is present, but the bedrooms, all closets and the entire second floor are not part of the library.</li>
+            <li>Please feel free to handicraft, read or talk on the couches, but no romping and pillow-fighting at any time.</li>
+        </ul>
+        <h2>Outdoors</h2>
+        <ul>
+            <li>Please feel free to park anywhere in the grass along the driveway or by the shop garage. Please leave the space in front of the main garage open for the safety of those coming in and out through the garage.</li>
+            <li>Please do not enter any outbuilding including the shop, shop garage and tractor shed because there are dangerous tools and farm equipment within.</li>
+            <li>Feel free to play outside but stay within the mowed grass areas.</li>
+            <li>Please feel free to enjoy the beauty of the gardens but please take care not to damage plants and vegetables by remaining on pathways. Please do not pick produce without permission.</li>
+            <li>Please enjoy the trampoline, swing set and designated outdoor playthings under parental supervision. Limit of 6 children on the trampoline at a time.</li>
+        </ul>
+        <h2>Our Animals</h2>
+        <ul>
+            <li>Our cat, Hunter, loves to be pet by you! But he may nip at you if you tease him or try to play with him. Please just pet him nicely.</li>
+            <li>Please enjoy watching the chickens, but do not enter their coop or fenced-in area. Chickens can carry salmonella and other diseases, so please do not pick up any eggs you may find laying in the yard.</li>
+        </ul>
+    </SidebarWrapper>
+)
+
+const POLICY_SECTIONS: Record<string, React.ComponentType> = {
+    "holds": Holds,
+    "interlibrary-loan": ILL,
+    "dashboard": PatronDashboard,
+    "classes": Classes,
+    "volunteers": Volunteers,
+    "renewals": Renewals,
+    "parent-present": ParentPresent,
+    "main-rules": MainRules,
+    "shire-rules": ShireRules,
+};
+
 export function PolicySection() {
     const { section } = useParams();
+    const Component = section ? POLICY_SECTIONS[section] : undefined;
 
-
-    if (section) {
-        switch (section) {
-            case "holds":
-                return <Holds />
-            case "interlibrary-loan":
-                return <ILL />
-            case "dashboard":
-                return <PatronDashboard />
-            case "classes":
-                return <Classes />
-            case "volunteers":
-                return <Volunteers />
-            case "renewals":
-                return <Renewals />
-            case "parent-present":
-                return <ParentPresent />
-            default:
-                break;
-        }
-    }
-    return <NotFoundPage />
+    return Component ? <Component /> : <NotFoundPage />;
 }
