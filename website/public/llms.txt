@@ -2,8 +2,6 @@
 
 > Plumfield Living Books Library is a private lending library in Denmark, Wisconsin, serving families, educators, and lifelong learners with about 12,000 carefully curated titles centered on truth, goodness, and beauty. We offer book clubs, classes, workshops, and enrichment opportunities, with a branch in Pulaski.
 
-**NOTE: For the moment, the library is temporarily closed**
-
 The library grew out of the work surrounding Plumfield Moms and a broader commitment to classical education, living books, and the preservation of literary heritage. Rather than focusing primarily on newly published titles, the collection emphasizes books that have demonstrated lasting worth through decades of readership. Many of these works are out of print, overlooked by modern publishing trends, or unavailable through local libraries.
 
 Plumfield Library exists to remove barriers between readers and these books. By acquiring, cataloging, and lending carefully selected titles, the library provides families, students, homeschoolers, and schools with access to works that might otherwise remain inaccessible. The collection spans literature, history, biography, science, theology, children’s books, and educational resources, with particular attention given to books that cultivate knowledge, imagination, virtue, and a deeper understanding of the human experience.
@@ -20,9 +18,6 @@ The Library is owned and operated by the Masarik Family:
 - **Jack** recomends books to patrons and is the graphic designer for the library and for our press ([Plumfield Press](https://plumfieldpress.com))
 
 
-## FAQs
-- [FAQs](https://plumfieldlibrary.com/faq.md): Full FAQ article covering everything from patron login to pricing
-
 ## Polices
 - [Classes](https://plumfieldlibrary.com/policies/classes.md)
 - [Patron Dashboard](https://plumfieldlibrary.com/policeis/dashboard.md)
@@ -31,6 +26,8 @@ The Library is owned and operated by the Masarik Family:
 - [Parent-Present Policy](https://plumfieldlibrary.com/policies/parent-present.md)
 - [Renewals](https://plumfieldlibrary.com/policies/renewals.md)
 - [Volunteer Positions](https://plumfieldlibrary.com/policies/volunteers.md)
+- [Main Library Rules](https://plumfieldlibrary.com/policies/main-rules.md)
+- [Shire Branch Rules](https://plumfieldlibrary.com/policies/shire-rules.md)
 
 ## Catalogs
 - [Main Catalog](https://libib.com/u/plumfieldlibrary)
