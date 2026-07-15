@@ -37,6 +37,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --color-link: #539dca;
   --font-heading: var(--font-serif);
   --font-serif: "Gentium Book Plus", serif;
   --color-sidebar-ring: var(--sidebar-ring);
@@ -164,6 +165,7 @@
   }
   html {
     @apply font-serif;
+    font-size: 112%;
   }
   a:not([class]) {
     color: #539dca;
@@ -182,9 +184,15 @@
     @apply pb-4 text-[16px];
   }
   h1 {
-    @apply text-3xl;
+    @apply py-8 text-3xl;
+  }
+  h2 {
+    @apply py-6 text-2xl;
   }
   ul {
-    @apply ml-3 list-disc [&>li]:mt-2;
+    @apply ml-3 list-disc pb-4 [&>li]:mt-2;
+  }
+  ol {
+    @apply ml-3 list-decimal [&>li]:mt-2;
   }
 }

@@ -1,0 +1,133 @@
+# Plumfield Library
+
+> Plumfield Living Books Library is a private lending library in Denmark, Wisconsin, serving families, educators, and lifelong learners with about 12,000 carefully curated titles centered on truth, goodness, and beauty. We offer book clubs, classes, workshops, and enrichment opportunities, with a branch in Pulaski.
+
+The library grew out of the work surrounding Plumfield Moms and a broader commitment to classical education, living books, and the preservation of literary heritage. Rather than focusing primarily on newly published titles, the collection emphasizes books that have demonstrated lasting worth through decades of readership. Many of these works are out of print, overlooked by modern publishing trends, or unavailable through local libraries.
+
+Plumfield Library exists to remove barriers between readers and these books. By acquiring, cataloging, and lending carefully selected titles, the library provides families, students, homeschoolers, and schools with access to works that might otherwise remain inaccessible. The collection spans literature, history, biography, science, theology, children’s books, and educational resources, with particular attention given to books that cultivate knowledge, imagination, virtue, and a deeper understanding of the human experience.
+
+The library is operated with a stewardship mindset. Resources are directed toward preserving access, maintaining accurate catalog records, and creating practical systems that allow a relatively small organization to serve a growing community. Technology is used to support the mission, not replace it: cataloging, discovery, circulation, and digital tools are developed to make meaningful books easier to find and borrow.
+
+At its heart, Plumfield Library is an effort to preserve and share a body of literature that might otherwise fade from public awareness. Its purpose is not merely to store books, but to connect readers with works that have shaped minds, inspired curiosity, and enriched lives across generations.
+
+The Library is owned and operated by the Masarik Family:
+
+**Sara** is the head librarian and the founder of Plumfield. Her children, **Michael**, **Greta**, and **Jack** all serve various roles in the operation of the library.
+- **Michael** handles all IT relating to the Library
+- **Greta** runs point on circulation and book recomendation
+- **Jack** recomends books to patrons and is the graphic designer for the library and for our press ([Plumfield Press](https://plumfieldpress.com))
+
+
+---
+
+## Library Classes
+
+### Policy overview
+
+Plumfield Library classes are available to members through the Patron Dashboard. This policy explains registration, payments, and cancellation rules.
+
+### Key points
+
+- Full Membership gives access to class registration in the Patron Dashboard.
+- Invoices can be viewed and paid through the dashboard.
+- Classes are non-refundable; if a class is canceled by the teacher, Plumfield will work toward a fair solution.
+
+Read the full human page at [/library-policies/classes](/library-policies/classes).
+
+---
+
+## Patron Dashboard
+
+### Policy overview
+
+The Patron Dashboard is the central hub for managing membership, classes, invoices, branch information, and interlibrary loan requests.
+
+### Key points
+
+- Use the dashboard to view invoices, class registrations, and branch details.
+- Sign in with your email to receive a one-time login link.
+- The dashboard also provides access to interlibrary loan request forms and class sign-ups.
+
+Read the full human page at [/library-policies/dashboard](/library-policies/dashboard).
+
+---
+
+## Holds
+
+### Policy overview
+
+Holds can only be placed from the Plumfield Library Libib catalog. This policy explains why holds are not available through the patron dashboard and how to place them.
+
+### Key points
+
+- Holds must be placed from the Libib website.
+- Requests must be submitted at least 48 hours before pickup.
+- For holds to be picked up at other branches, refer to the Interlibrary Loan policy.
+
+Read the full human page at [/library-policies/holds](/library-policies/holds).
+
+---
+
+## Interlibrary Loan
+
+### Policy overview
+
+Plumfield Library is building an interlibrary loan process to connect patrons with books from the Main Library. This policy describes how to request an interlibrary loan and what to expect.
+
+### Key points
+
+- Place holds normally through Libib.
+- Use the patron dashboard to submit one request form per book.
+- The book is checked out when it ships and may take up to two weeks.
+- Interlibrary loans are checked out for 60 days and may not be renewed.
+
+Read the full human page at [/library-policies/interlibrary-loan](/library-policies/interlibrary-loan).
+
+---
+
+## Parent-Present Policy
+
+### Policy overview
+
+Plumfield Living Library requires parents, guardians, or responsible adults to remain present and available during any library class, gathering, or visit unless otherwise stated in writing.
+
+### Key points
+
+- Parents or responsible adults must stay on site for the full duration of Plumfield activities.
+- This policy applies at all locations, including outdoor areas and branch spaces.
+- Children age 5 and under need close support throughout activities.
+- Plumfield may ask families to step out or withdraw if a child’s needs become unsafe or disruptive.
+
+Read the full human page at [/library-policies/parent-present](/library-policies/parent-present).
+
+---
+
+## Renewals
+
+### Policy overview
+
+Plumfield Library does not offer renewals at this time. This policy explains why renewals are unavailable and notes a special accommodation for new mothers.
+
+### Key points
+
+- Renewals are not offered due to software and circulation limitations.
+- The library needs to keep books circulating across multiple locations.
+- New mothers may keep books for up to three months during maternity leave with prior arrangement.
+
+Read the full human page at [/library-policies/renewals](/library-policies/renewals).
+
+---
+
+## Volunteers
+
+### Policy overview
+
+Volunteering and internships are temporarily paused as Plumfield expands into new branches and launches new programs.
+
+### Key points
+
+- New volunteer applications are currently on hold.
+- The library hopes to reopen the internship program next school year.
+- This pause helps Plumfield focus on stable operations during a period of transition.
+
+Read the full human page at [/library-policies/volunteers](/library-policies/volunteers).

@@ -22,13 +22,12 @@ You can apply via the Membership Interest Form button on our [home page](https:/
 
 **What are your hours?** 
 
-At main, by appointment on Thursday from 12:00-5:00. Patrons can schedule an appointment from the [Patron Dashboard](https://dashboard.plumfieldlibrary.com). At Shire, by appointment.
+At main, by appointment on Thursday from 12:00-7:00, and some Tuesdays. Patrons can schedule an appointment from the [Patron Dashboard](https://dashboard.plumfieldlibrary.com). At Shire, by appointment.
 
 **Where are you located**
 We have three branches:
 - Denmark, WI
 - Pulaski, WI
-- West De Pere, WI (Comming Soon!)
 
 We also have a Packhorse Librarian who makes routine trips with books from the Denmark branch to Kaukauna
 
