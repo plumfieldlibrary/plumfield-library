@@ -48,7 +48,7 @@ export function App() {
           </div>
           <h2 className="font-medium justify-center text-center text-4xl pb-6">Branches</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <Card className="max-w-90 w-full md:max-w-full h-full m-auto">
+            <Card className=" w-full md:max-w-full h-full m-auto">
               <CardHeader>
                 <div className="w-full h-auto m-0">
                   <img src={MainImg} alt="The Main Branch location" className="object-cover" />
@@ -63,7 +63,7 @@ export function App() {
                 </ul>
               </CardContent>
             </Card>
-            <Card className="max-w-90 w-full md:max-w-full h-full m-auto">
+            <Card className=" w-full md:max-w-full h-full m-auto">
               <CardHeader>
                 <div className="w-full h-auto m-0">
                   <img src={ShireImg} alt="The Shire Branch location" className="object-cover" />

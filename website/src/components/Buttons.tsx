@@ -56,3 +56,42 @@ export const ContactUs = () => {
         <Button variant={"ghost"} onClick={() => (setOpen(true))}>Contact Us</Button>
     </>)
 }
+
+export const ContactUsMobile = () => {
+    const [open, setOpen] = useState(false)
+    return (<>
+        <FilloutSliderEmbed
+            filloutId="u9U3ZjzcDuus"
+            isOpen={open}
+            sliderDirection="right"
+            onClose={() => setOpen(false)}
+        />
+        <Button variant={"ghost"} onClick={() => (setOpen(true))} className="text-black font-bold text-lg">Contact Us</Button>
+    </>)
+}
+
+export const WaitingList = () => {
+    const [open, setOpen] = useState(false)
+    return (<>
+        <FilloutSliderEmbed
+            filloutId="6JvLvSXxcSus"
+            isOpen={open}
+            sliderDirection="right"
+            onClose={() => setOpen(false)}
+        />
+        <Button variant={"ghost"} onClick={() => (setOpen(true))}>Waiting List</Button>
+    </>)
+}
+
+export const WaitingListMobile = () => {
+    const [open, setOpen] = useState(false)
+    return (<>
+        <FilloutSliderEmbed
+            filloutId="6JvLvSXxcSus"
+            isOpen={open}
+            sliderDirection="right"
+            onClose={() => setOpen(false)}
+        />
+        <Button variant={"ghost"} onClick={() => (setOpen(true))} className="text-black font-bold text-lg">Waiting List</Button>
+    </>)
+}
