@@ -7,7 +7,7 @@ import EpochTimes from "@/assets/epoch_times.webp"
 import MainImg from "@/assets/main.png?format=avif"
 import ShireImg from "@/assets/shire.webp"
 import { Nav } from "@/components/Nav"
-import { DoTerraButton, ImageLink } from "../components/Buttons"
+import { ImageLink } from "../components/Buttons"
 import { FAQ } from "../components/FAQ"
 // import { NewPatron } from "../components/Forms"
 import { FrontGallery } from "../components/Galleries"
@@ -82,11 +82,11 @@ export function App() {
           </div>
           <h2 className="py-6 font-medium justify-center text-center text-4xl">FAQs</h2>
           <FAQ />
-          <h2 id="doterra" className="py-6 font-medium justify-center text-center text-4xl">doTerra</h2>
+          {/* <h2 id="doterra" className="py-6 font-medium justify-center text-center text-4xl">doTerra</h2>
           <p>Below you can order doTerra oils through the library at the wholseale discount</p>
           <div className="flex items-center justify-center">
             <DoTerraButton />
-          </div>
+          </div> */}
 
         </div>
       </main>

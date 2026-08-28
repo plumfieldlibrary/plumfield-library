@@ -1,4 +1,6 @@
+import { FilloutSliderEmbed } from "@fillout/react";
 import { ArrowUpRightIcon } from "lucide-react";
+import { useState } from "react";
 import { Button } from "./ui/button";
 import { Card, CardFooter, CardHeader } from "./ui/card";
 export const LinkButton = ({ src, title }: { src: string, title: string }) => (
@@ -41,4 +43,16 @@ export const DoTerraButton = () => {
     const modHref = "https://plumfieldlibrary.fillout.com/t/fcqHZEwrBqus?month=" + encodeURIComponent(endString);
     return <Button asChild><a href={modHref}>doTerra Order</a></Button>
 
+}
+export const ContactUs = () => {
+    const [open, setOpen] = useState(false)
+    return (<>
+        <FilloutSliderEmbed
+            filloutId="u9U3ZjzcDuus"
+            isOpen={open}
+            sliderDirection="right"
+            onClose={() => setOpen(false)}
+        />
+        <Button variant={"ghost"} onClick={() => (setOpen(true))}>Contact Us</Button>
+    </>)
 }
