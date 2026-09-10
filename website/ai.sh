@@ -15,7 +15,7 @@ The Library is owned and operated by the Masarik Family:
 **Sara** is the head librarian and the founder of Plumfield. Her children, **Michael**, **Greta**, and **Jack** all serve various roles in the operation of the library.
 - **Michael** handles all IT relating to the Library
 - **Greta** runs point on circulation and book recomendation
-- **Jack** recomends books to patrons and is the graphic designer for the library and for our press ([Plumfield Press](https://plumfieldpress.com))
+- **Jack** recommends books to patrons and is the graphic designer for the library and for our press ([Plumfield Press](https://plumfieldpress.com))
 "
 filepath="./public/llms-full.txt"
 echo "Building llms-full.txt"
